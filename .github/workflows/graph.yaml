@@ -16,7 +16,7 @@ jobs:
       - name: Write CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GDRIVE_CREDENTIAL_DATA : ${{secrets.GDRIVE_CREDENTIAL_DATA}}
+          GDRIVE_CREDENTIALS_DATA : ${{secrets.GDRIVE_CREDENTIALS_DATA}}
           
         run: |
           # Post reports as comments in GitHub PRs
