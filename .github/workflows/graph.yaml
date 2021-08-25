@@ -1,4 +1,4 @@
-name: your-workflow-name
+name: graph
 on: [push]
 jobs:
   run:
@@ -16,7 +16,7 @@ jobs:
       - name: Write CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          Gdrive_credential_data : ${{secrets.Gdrive_credential_data}}
+          GDRIVE_CREDENTIAL_DATA : ${{secrets.GDRIVE_CREDENTIAL_DATA}}
           
         run: |
           # Post reports as comments in GitHub PRs
