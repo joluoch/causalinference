@@ -1,0 +1,4 @@
+artifact_location: file:///C:/Users/Jakinda/Documents/Python%20Scripts/10Academy/causalinference/script/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: Breast cancer Causality
