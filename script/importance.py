@@ -47,7 +47,7 @@ select_feature.fit(data_train, target_train)
 ##########################################
 # Calculate feature importance in random forest
 importances = select_feature.feature_importances_
-labels = df.columns
+labels = data.columns
 feature_df = pd.DataFrame(list(zip(labels, importances)), columns = ["feature","importance"])
 feature_df = feature_df.sort_values(by='importance', ascending=False,)
 
